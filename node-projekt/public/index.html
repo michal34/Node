@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Logowanie</h1>
+
+    <div>
+        <form id="loginForm">
+
+            <input name="user"
+                   type="text"
+                   placeholder="User">
+
+            <input name="password"
+                   type="text"
+                   placeholder="Password">
+
+            <button type="submit">Zaloguj</button>
+
+        </form>
+
+        <p id="res"></p>
+
+        <div class="hidden-fn">
+            <button>Sprawdź swoje konto</button>
+
+            <p id="ownerName"></p>
+            <p id="accountValue"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
