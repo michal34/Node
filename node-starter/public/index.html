@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Logowanie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="hello" >Logowanie</h1>
+        </div>
+
+        <form class="loginForm" id="loginForm">
+            <div>
+                <input name="user"
+                type="text"
+                placeholder="User">
+            </div>
+            <div>
+                <input name="password"
+                type="password"
+                placeholder="Password">
+            </div>
+            <button type="submit">Zaloguj</button>
+        </form>
+
+        <div class="secret-container">
+            <button id="showSecret">Pokaż sekret</button>
+            <button id="logout">Wyloguj</button>
+            <div class="data" id="data">
+                <p id="secret"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
